@@ -5,7 +5,7 @@ NETWORK:
 *
  
 CACHE:
-beam.html
+index.html
 beam.js
 style.css
 themes/jquery.mobile.icons.min.css
