@@ -1,0 +1,45 @@
+.ui-slider-track {
+	height:35px;
+}
+.ui-slider-track .ui-btn.ui-slider-handle{
+	height:35px;
+	width:50px;
+}
+input.ui-slider-input {
+	display : none !important;
+}
+
+body, input, select, textarea, button, .ui-btn{
+	line-height: 2;
+}
+
+.ui-mobile label, div.ui-controlgroup-label
+{
+	/* font-size:medium; */
+	font-color:rgb(138, 201, 243);
+	font-size: large;
+	margin-top: 7%;
+	margin-left: 5%;
+}
+h1{
+	display:inline;
+	color: rgb(32, 137, 207);
+	text-align: center;
+	margin-top: 9%;
+	margin-left: 2%;
+	text-align: center;
+}
+body{
+	background-color:blue;
+}
+h2{margin-left:5%}
+.ui-mobile .ui-page {
+	background-color:lightblue;
+}
+.ui-slider-track .ui-btn.ui-slider-handle {
+	background-color: rgb(240, 244, 245);
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
+{
+	background-color: rgb(151, 158, 162);
+}

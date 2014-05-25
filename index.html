@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html manifest="save.manifest">
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name=”viewport” content=”width=1024, minimal-ui”>
+	<meta charset="utf-8">
+	<title>Beam</title>
+	<script src="beam.js"> </script>
+	<link rel="stylesheet" href="themes/lightblue.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body id="bod">
+<h1 id="title">Results: </h1>
+<h2 id="results">Packout Time</h2>
+<h2 id="boxesNeeded">Boxes Needed</h2>
+<form class="full-width-slider">
+	<label for="pass-t" class="">Number of Passes: <span id="slide-pt">##</span></label>
+    <input onchange="calculate()" type="range" name="slider-12" id="pass-t" value="10" min="0" max="30" data-highlight="true">
+<label for="pass-c" class="">Current Pass: <span id="slide-pc">##</span></label>
+    <input onchange="calculate()" type="range" name="slider-12" id="pass-c" value="10" min="0" max="30" data-highlight="true">
+<label for="weight-a" class="">Weight of Blender A: <span id="slide-wa">##</span></label>
+	
+    <input onchange="calculate()" type="range" name="slider-12" id="weight-a" value="0" step="250" min="0" max="30000" data-highlight="true">
+<label for="weight-b" class="">Weight of Blender B: <span id="slide-wb">##</span></label>
+    <input onchange="calculate()" type="range" name="slider-12" id="weight-b" step="250" value="0" min="0" max="30000" data-highlight="true">
+<label for="activeBlender">Blender with increasing weight:
+    <select onchange="calculate()" id="activeBlender" name="flip-1" data-role="slider">
+        <option value="A">A</option>
+        <option value="B">B</option>
+    </select></label>
+<label for="rate" class="">Rate: <span id="slide-rate">##</span></label>
+	
+    <input onchange="calculate()" type="range" name="slider-12" id="rate" step="250" value="5000" min="0" max="6000" data-highlight="true">
+<label for="slider-s" class="">Boxe Weight: <span id="slide-bw">##</span></label>
+	
+    <input onchange="calculate()" type="range" name="slider-12" id="boxes" value="1400" min="0" max="1800" step="50" data-highlight="true">
+</form>
+
+</body>
+</html>
