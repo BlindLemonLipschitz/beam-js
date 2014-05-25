@@ -1,10 +1,5 @@
 CACHE MANIFEST
-# Version 1.5
- 
-NETWORK:
-*
- 
-CACHE:
+
 index.html
 beam.js
 style.css
@@ -112,3 +107,9 @@ themes/images/icons-png/user-black.png
 themes/images/icons-png/user-white.png
 themes/images/icons-png/video-black.png
 themes/images/icons-png/video-white.png
+# Version 1.5
+ 
+NETWORK:
+*
+ 
+CACHE:
