@@ -15,9 +15,9 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body id="bod">
-<h1 id="title">Results: </h1>
-<h2 id="results">Packout Time</h2>
-<h2 id="boxesNeeded">Boxes Needed</h2>
+<h2 id='heading'>Packout: </h2><h2 id="results"></h2>
+<br>
+<h2 id='heading'>Boxes Needed:  </h2><h2 id="boxesNeeded"></h2>
 <form class="full-width-slider">
 	<label for="pass-t" class="">Number of Passes: <span id="slide-pt">##</span></label>
     <input onchange="calculate()" type="range" name="slider-12" id="pass-t" value="10" min="0" max="30" data-highlight="true">
@@ -29,7 +29,7 @@
 <label for="weight-b" class="">Weight of Blender B: <span id="slide-wb">##</span></label>
     <input onchange="calculate()" type="range" name="slider-12" id="weight-b" step="250" value="0" min="0" max="30000" data-highlight="true">
 <label for="activeBlender">Blender with increasing weight:
-    <select onchange="calculate()" id="activeBlender" name="flip-1" data-role="slider">
+    <select onchange="calculate()" style='height:300%'id="activeBlender" name="flip-1" data-role="flipswitch">
         <option value="A">A</option>
         <option value="B">B</option>
     </select></label>

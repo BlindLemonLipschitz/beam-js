@@ -45,8 +45,8 @@ function calculate() {
 	var weightCalculated = (weightAdded * passesLeft) + weightLeftInCurrentPass;
 	var hoursToPackout = weightCalculated / rate;
 	var date = new Date().addHours(hoursToPackout).toString().replace(/:\d\d GMT-.*/,"");
-	result.innerHTML = "Packout: "+ date //
-	boxesNeeded.innerHTML = "Boxes Needed: "+(Math.ceil(weightAdded / boxWeight))
+	result.innerHTML = date
+	boxesNeeded.innerHTML = (Math.ceil(weightAdded / boxWeight))
 	document.getElementById("slide-pt").innerHTML = passT; 
 	document.getElementById("slide-pc").innerHTML = passC; 
 	document.getElementById("slide-wb").innerHTML = weightB;
