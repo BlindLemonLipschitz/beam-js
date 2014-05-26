@@ -1,7 +1,13 @@
 CACHE MANIFEST
-
+apple-touch-startup-image-640x1096.png
+apple-touch-startup-image-640x920.png
 beam.js
+cache.manifest
+startup.png
 style.css
+touch-icon-ipad-retina.png
+touch-icon-iphone-retina.png
+touch-icon-iphone.png
 
 NETWORK:
 *
