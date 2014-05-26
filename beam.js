@@ -55,3 +55,6 @@ function calculate() {
 	document.getElementById("slide-bw").innerHTML = boxWeight; 
 }
 
+document.ontouchmove = function(event){
+	    event.preventDefault();
+}
