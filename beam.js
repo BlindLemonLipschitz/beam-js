@@ -44,7 +44,7 @@ function calculate() {
 	var passesLeft = passT -1 - passC;
 	var weightCalculated = (weightAdded * passesLeft) + weightLeftInCurrentPass;
 	var hoursToPackout = weightCalculated / rate;
-	var date = new Date().addHours(hoursToPackout).toString().replace(/:\d\d GMT-.*/,"");
+	var date = new Date().addHours(hoursToPackout).toString().replace(/:\d\d GMT-.*/,"").replace(/20\d\d /,'')
 	result.innerHTML = date
 	boxesNeeded.innerHTML = (Math.ceil(weightAdded / boxWeight))
 	document.getElementById("slide-pt").innerHTML = passT; 
@@ -55,6 +55,16 @@ function calculate() {
 	document.getElementById("slide-bw").innerHTML = boxWeight; 
 }
 
-document.ontouchmove = function(event){
-	    event.preventDefault();
+	document.ontouchmove = function(event){
+			    event.preventDefault();
+	}
+function readDeviceOrientation() {
+                 		
+    if (Math.abs(window.orientation) === 90) {
+	   document.getElementById('landscape').style.display ='block'; 
+    } else {
+	   document.getElementById('landscape').style.display ='none'; 
+    	// Portrait
+    }
 }
+window.onorientationchange = readDeviceOrientation;
