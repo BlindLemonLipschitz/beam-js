@@ -1,7 +1,7 @@
 .ui-flipswitch .ui-btn.ui-flipswitch-on {font-size:100%;}
 .ui-flipswitch .ui-btn.ui-flipswitch-off {font-size:100%;}
-#boxesNeeded{color: rgb(23, 165, 177);}
-#results{color: rgb(23, 165, 177);}
+#boxesNeeded{color: rgb(75,75,75);}
+#results{color: rgb(75, 75, 75);}
 #activeBlender {height:75px;}
 .ui-slider-track {
 	height:75px;
@@ -27,14 +27,12 @@ body, input, select, textarea, button, .ui-btn{
 .ui-mobile label, div.ui-controlgroup-label
 {
 	/* font-size:medium; */
-	font-color:rgb(138, 201, 243);
 	font-size: 300%;
 	margin-top: 6%;
 	margin-left: 5%;
 	/* height: 300%; */
 	font-weight: bold;
 	font-family: monospace;
-	color: rgb(102, 109, 114);
 }
 h1{
 	display:inline;
@@ -48,23 +46,11 @@ h1{
 body{
 	background-color:blue;
 }
-h2{margin-left: 4%;font-size: 350%;display: inline;color: rgb(102, 109, 114);}
-.ui-mobile .ui-page {
-	background-color:lightblue;
-}
-.ui-slider-track .ui-btn.ui-slider-handle {
-	/* height: 111%; */
-}
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
-{
-	background-color: rgb(151, 158, 162);
-}
+h2{margin-left: 4%;font-size: 350%;display: inline;color: rgb(80, 86, 90);}
 label#rate-label{margin-top:2%}
 span[id^='slide-'] {
-	color: rgb(23, 165, 177);
+	color: rgb(77, 82, 82);
 	font-weight: bold;
 	font-size: 115%;
 }
-.ui-flipswitch.ui-flipswitch-handle{
-	background-color:red;
-}
+.ui-flipswitch .ui-btn.ui-flipswitch-on{color:rgb(75,75,75);font-size: 95%;top: -7%;}
