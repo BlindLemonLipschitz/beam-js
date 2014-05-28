@@ -44,7 +44,7 @@ function calculate() {
 	var passesLeft = passT -1 - passC;
 	var weightCalculated = (weightAdded * passesLeft) + weightLeftInCurrentPass;
 	var hoursToPackout = weightCalculated / rate;
-	var date = new Date().addHours(hoursToPackout).toString().replace(/:\d\d GMT-.*/,"").replace(/20\d\d /,'')
+	var date = new Date().addHours(hoursToPackout).toString().replace(/:\d\d GMT-.*/,"").replace(/20\d\d/,'at')
 	result.innerHTML = date
 	boxesNeeded.innerHTML = (Math.ceil(weightAdded / boxWeight))
 	document.getElementById("slide-pt").innerHTML = passT; 
