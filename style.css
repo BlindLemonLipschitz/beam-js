@@ -1,10 +1,19 @@
+.ui-flipswitch .ui-btn.ui-flipswitch-on {font-size:100%;}
+.ui-flipswitch .ui-btn.ui-flipswitch-off {font-size:100%;}
+#boxesNeeded{color: rgb(75,75,75);}
+#results{color: rgb(75, 75, 75);}
+#activeBlender {height:75px;}
 .ui-slider-track {
-	height:35px;
+	height:75px;
 	margin-bottom:1%;
+	top: 0%;
+	margin-right: 5%;
 }
 .ui-slider-track .ui-btn.ui-slider-handle{
-	height:35px;
-	width:50px;
+	height: 95px;
+	width:75px;
+	top: 8%;
+	/* background-color:red; */
 }
 input.ui-slider-input {
 	display : none !important;
@@ -12,15 +21,18 @@ input.ui-slider-input {
 
 body, input, select, textarea, button, .ui-btn{
 	line-height: 2;
+	/* height: 300%; */
 }
 
 .ui-mobile label, div.ui-controlgroup-label
 {
 	/* font-size:medium; */
-	font-color:rgb(138, 201, 243);
-	font-size: 240%;
-	margin-top: 7%;
+	font-size: 300%;
+	margin-top: 6%;
 	margin-left: 5%;
+	/* height: 300%; */
+	font-weight: bold;
+	font-family: monospace;
 }
 h1{
 	display:inline;
@@ -34,14 +46,12 @@ h1{
 body{
 	background-color:blue;
 }
-h2{margin-left:5%;font-size: 250%;}
-.ui-mobile .ui-page {
-	background-color:lightblue;
+h2{margin-left: 4%;font-size: 350%;display: inline;color: rgb(80, 86, 90);}
+label#rate-label{margin-top:2%}
+span[id^='slide-'] {
+	color: rgb(231, 241, 241);
+	font-weight: bold;
+	font-size: 115%;
 }
-.ui-slider-track .ui-btn.ui-slider-handle {
-	background-color: rgb(240, 244, 245);
-}
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
-{
-	background-color: rgb(151, 158, 162);
-}
+.ui-flipswitch .ui-btn.ui-flipswitch-on{color:rgb(75,75,75);font-size: 95%;top: -7%;left:-3%}
+

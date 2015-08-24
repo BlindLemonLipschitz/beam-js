@@ -2,22 +2,31 @@
 <html manifest="cache.manifest">
 <head>
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name=”viewport” content=”width=1024, minimal-ui”>
+	<!-- iPhone 5s -->
+<link rel="apple-touch-startup-image" href="startup-image.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta charset="utf-8">
-	<title>Beam</title>
+	<title>Pack-out Time</title>
 	<script src="beam.js"> </script>
-	<link rel="stylesheet" href="themes/lightblue.min.css" />
-<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<!-- jquery stuff -->
+	<link rel="stylesheet" href="themes/solvay1.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body id="bod">
-<h1 id="title">Results: </h1>
-<h2 id="results">Packout Time</h2>
-<h2 id="boxesNeeded">Boxes Needed</h2>
+<div id='bg'>
+<img src='landscape.png' id='landscape' style='display:none'/>
+</div>
+<h2 id='heading'>Packout: </h2><h2 id="results"></h2>
+<br>
+<h2 id='heading'>Boxes Needed:  </h2><h2 id="boxesNeeded"></h2>
 <form class="full-width-slider">
 	<label for="pass-t" class="">Number of Passes: <span id="slide-pt">##</span></label>
     <input onchange="calculate()" type="range" name="slider-12" id="pass-t" value="10" min="0" max="30" data-highlight="true">
@@ -29,7 +38,7 @@
 <label for="weight-b" class="">Weight of Blender B: <span id="slide-wb">##</span></label>
     <input onchange="calculate()" type="range" name="slider-12" id="weight-b" step="250" value="0" min="0" max="30000" data-highlight="true">
 <label for="activeBlender">Blender with increasing weight:
-    <select onchange="calculate()" id="activeBlender" name="flip-1" data-role="slider">
+    <select onchange="calculate()" style='height:300%;background-color:red'id="activeBlender" name="flip-1" data-role="flipswitch">
         <option value="A">A</option>
         <option value="B">B</option>
     </select></label>
